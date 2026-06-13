@@ -109,7 +109,7 @@ Fitur
 - Urutkan nilai tertinggi ke terendah
 File:
 - pengurutan.h
-- - pengurutan.cpp
+- pengurutan.cpp
 
 
  Catatan untuk semua anggota:
