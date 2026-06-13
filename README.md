@@ -7,11 +7,12 @@ Program berbasis C++ (Console/Terminal) untuk mengelola data siswa, mata pelajar
 
 Nana-nama anggota Kelompok
 - Fikri Nurfahmi
-- M. Gustav 
+- M. Gustav Abdillah
 - Dani Hidayatullah
 - Hazmy hizbul izza
 - Doniza
 - Hirsan maulana
+- Gilang Alif Maulana
 
 
 Pembagian Tugas Detail
@@ -93,18 +94,22 @@ File:
 
 
 
-- Doniza (Modul Pencarian dan Pengurutan)
+- Doniza (Modul Pencarian) 
 Fitur Pencarian:
 - Cari Siswa berdasarkan NIS
 - Cari Mata Pelajaran berdasarkan Kode Mata Pelajaran
-Fitur Pengurutan:
-- Urutkan Data Siswa berdasarkan NIS
-- Urutkan Nilai berdasarkan nilai tertinggi
 File:
-- algoritma.h
-- algoritma.cpp
+- pencarian.h
+- pencarian.cpp
 
-
+- Gilang (Modul Pengurutan)
+Fitur
+- Urutkan data siswa berdasarkan NIS
+- Urutkan data siswa berdasarkan nama
+- Urutkan nilai tertinggi ke terendah
+File:
+- pengurutan.h
+- - pengurutan.cpp
 
 
  Catatan untuk semua anggota:
