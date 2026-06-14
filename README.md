@@ -84,6 +84,7 @@ Fitur:
 - Input Nilai
 - Tampilkan Nilai
 - Edit Nilai
+- Hapus Nilai
 Data yang Dikelola:
 - NIS
 - Mata Pelajaran
