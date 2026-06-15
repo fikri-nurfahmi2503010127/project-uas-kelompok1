@@ -61,3 +61,80 @@ void tampilMapel() {
     }
 }
 
+// Edit Mata Pelajaran
+void editMapel() {
+
+    if (headMapel == NULL) {
+        cout << "\nData mata pelajaran kosong.\n";
+        return;
+    }
+
+    string cari;
+
+    cout << "\nMasukkan Kode Mata Pelajaran yang akan diedit : ";
+    cin >> cari;
+    cin.ignore();
+
+    Mapel* temp = headMapel;
+
+    while (temp != NULL) {
+
+        if (temp->kodeMapel == cari) {
+
+            cout << "\nData ditemukan!\n";
+
+            cout << "Nama Mata Pelajaran Baru : ";
+            getline(cin, temp->namaMapel);
+
+            cout << "Guru Pengampu Baru       : ";
+            getline(cin, temp->guruPengampu);
+
+            cout << "\nData berhasil diperbarui.\n";
+            return;
+        }
+
+        temp = temp->next;
+    }
+
+    cout << "\nData tidak ditemukan.\n";
+}
+
+// Hapus Mata Pelajaran
+void hapusMapel() {
+
+    if (headMapel == NULL) {
+        cout << "\nData mata pelajaran kosong.\n";
+        return;
+    }
+
+    string cari;
+
+    cout << "\nMasukkan Kode Mata Pelajaran yang akan dihapus : ";
+    cin >> cari;
+
+    Mapel* temp = headMapel;
+    Mapel* prev = NULL;
+
+    while (temp != NULL) {
+
+        if (temp->kodeMapel == cari) {
+
+            if (prev == NULL) {
+                headMapel = temp->next;
+            } else {
+                prev->next = temp->next;
+            }
+
+            delete temp;
+
+            cout << "\nData berhasil dihapus.\n";
+            return;
+        }
+
+        prev = temp;
+        temp = temp->next;
+    }
+
+    cout << "\nData tidak ditemukan.\n";
+}
+
