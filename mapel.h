@@ -18,5 +18,7 @@ extern Mapel* headMapel;
 // CRUD Mata Pelajaran
 void tambahMapel();
 void tampilMapel();
+void editMapel();
+void hapusMapel();
 
 #endif
