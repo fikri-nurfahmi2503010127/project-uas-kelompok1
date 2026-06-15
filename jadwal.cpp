@@ -60,3 +60,29 @@ void tampilJadwal() {
         temp = temp->next;
     }
 }
+// Hapus Jadwal (Dequeue)
+void hapusJadwal() {
+
+    if (frontJadwal == NULL) {
+        cout << "\nTidak ada jadwal yang dapat dihapus.\n";
+        return;
+    }
+
+    Jadwal* hapus = frontJadwal;
+
+    cout << "\nJadwal yang dihapus:\n";
+    cout << "Hari           : " << hapus->hari << endl;
+    cout << "Jam            : " << hapus->jam << endl;
+    cout << "Kelas          : " << hapus->kelas << endl;
+    cout << "Mata Pelajaran : " << hapus->mataPelajaran << endl;
+
+    frontJadwal = frontJadwal->next;
+
+    if (frontJadwal == NULL) {
+        rearJadwal = NULL;
+    }
+
+    delete hapus;
+
+    cout << "\nJadwal berhasil dihapus.\n";
+}
