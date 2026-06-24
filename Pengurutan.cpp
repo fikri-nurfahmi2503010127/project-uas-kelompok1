@@ -1,25 +1,30 @@
 
-#include "pengurutan.h"
+#include "Pengurutan.h"
 #include <algorithm>
 
 // Sorting Siswa berdasarkan NIS (Ascending)
-void urutkanSiswaByNIS() {
+void urutkanSiswaByNIS()
+{
 
-    if (headSiswa == NULL || headSiswa->next == NULL) {
+    if (headSiswa == NULL || headSiswa->next == NULL)
+    {
         cout << "\nData siswa tidak cukup untuk diurutkan.\n";
         return;
     }
 
     bool tukar;
 
-    do {
+    do
+    {
         tukar = false;
 
-        Siswa* current = headSiswa;
+        Siswa *current = headSiswa;
 
-        while (current->next != NULL) {
+        while (current->next != NULL)
+        {
 
-            if (current->nis > current->next->nis) {
+            if (current->nis > current->next->nis)
+            {
 
                 swap(current->nis, current->next->nis);
                 swap(current->nama, current->next->nama);
@@ -38,23 +43,28 @@ void urutkanSiswaByNIS() {
 }
 
 // Sorting Siswa berdasarkan Nama (Ascending)
-void urutkanSiswaByNama() {
+void urutkanSiswaByNama()
+{
 
-    if (headSiswa == NULL || headSiswa->next == NULL) {
+    if (headSiswa == NULL || headSiswa->next == NULL)
+    {
         cout << "\nData siswa tidak cukup untuk diurutkan.\n";
         return;
     }
 
     bool tukar;
 
-    do {
+    do
+    {
         tukar = false;
 
-        Siswa* current = headSiswa;
+        Siswa *current = headSiswa;
 
-        while (current->next != NULL) {
+        while (current->next != NULL)
+        {
 
-            if (current->nama > current->next->nama) {
+            if (current->nama > current->next->nama)
+            {
 
                 swap(current->nis, current->next->nis);
                 swap(current->nama, current->next->nama);
@@ -73,23 +83,28 @@ void urutkanSiswaByNama() {
 }
 
 // Sorting Nilai Tertinggi ke Terendah
-void urutkanNilaiTertinggi() {
+void urutkanNilaiTertinggi()
+{
 
-    if (topNilai == NULL || topNilai->next == NULL) {
+    if (topNilai == NULL || topNilai->next == NULL)
+    {
         cout << "\nData nilai tidak cukup untuk diurutkan.\n";
         return;
     }
 
     bool tukar;
 
-    do {
+    do
+    {
         tukar = false;
 
-        Nilai* current = topNilai;
+        Nilai *current = topNilai;
 
-        while (current->next != NULL) {
+        while (current->next != NULL)
+        {
 
-            if (current->nilai < current->next->nilai) {
+            if (current->nilai < current->next->nilai)
+            {
 
                 swap(current->nis,
                      current->next->nis);

@@ -7,18 +7,21 @@
 using namespace std;
 
 // Struktur Stack Nilai
-struct Nilai {
+struct Nilai
+{
     string nis;
     string mataPelajaran;
     int nilai;
-    Nilai* next;
+    Nilai *next;
 };
 
 // Pointer Top Stack
-extern Nilai* topNilai;
+extern Nilai *topNilai;
 
 // Operasi Stack
 void inputNilai();
 void tampilNilai();
 void editNilai();
 void hapusNilai();
+
+#endif
